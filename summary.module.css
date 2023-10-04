@@ -1,0 +1,69 @@
+/* Added transition effect for all screen sizes */
+.customBgPosition {
+  transition: padding-top 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+  /* default values if any */
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .customBgPosition {
+    padding-top: 50px;
+    margin-top: -150px;
+  }
+}
+
+/* Special Case: 1027px - 851px */
+@media (min-width: 851px) and (max-width: 1026px) {
+  .customBgPosition {
+    padding-top: 60px; /* Adjust as needed */
+    margin-top: -180px; /* Adjust as needed */
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .customBgPosition {
+    padding-top: 80px;
+    margin-top: -210px;
+  }
+}
+
+/* Large Laptop */
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .customBgPosition {
+    padding-top: 100px;
+    margin-top: -240px;
+  }
+}
+
+/* 4K and above */
+@media (min-width: 2560px) {
+  .customBgPosition {
+    padding-top: 120px;
+    margin-top: -240px;
+  }
+}
+
+/* Mobile Large */
+@media (min-width: 425px) and (max-width: 767px) {
+  .customBgPosition {
+    padding-top: 40px;
+    margin-top: -120px;
+  }
+}
+
+/* Mobile Medium */
+@media (min-width: 375px) and (max-width: 425px) {
+  .customBgPosition {
+    padding-top: 1px;
+    margin-top: -75px;
+  }
+}
+
+/* Mobile Small */
+@media (min-width: 320px) and (max-width: 374px) {
+  .customBgPosition {
+    padding-top: 1px;
+    margin-top: -60px;
+  }
+}
